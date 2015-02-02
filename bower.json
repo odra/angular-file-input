@@ -1,0 +1,14 @@
+{
+  "name": "angular-file-input",
+  "version": "1.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.20"
+  }
+}
