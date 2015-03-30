@@ -15,7 +15,7 @@
 	</head>
 	<body ng-app="app">
 		<div ng-controller="DemoCtrl">
-			<ng-file-input mode="data-url" callback="callback(file)"></ng-file-input>
+			<ng-file-input mode="data-url" callback="callback(file)" tmpl="'button.html'"></ng-file-input>
 			<p>{{file | json}}</p>
 		</div>
 	</body>

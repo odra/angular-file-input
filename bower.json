@@ -6,9 +6,22 @@
     "**/.*",
     "node_modules",
     "test",
-    "tests"
+    "tests",
+    "bower_components"
   ],
   "dependencies": {
     "angularjs": "~1.2.20"
-  }
+  },
+  "homepage": "https://github.com/Goldark/angular-file-input",
+  "authors": [
+    "Goldark <opensource@goldark.com.br>",
+    "Leonardo Rossetti <leonardo@goldark.com.br>"
+  ],
+  "description": "Simple angularjs directive to handle the File Reader API",
+  "main": "./dist/angular-file-input.min.js",
+  "keywords": [
+    "angularjs",
+    "file",
+    "reader"
+  ]
 }
