@@ -1,35 +1,34 @@
-Angular File Input
-================
+#Angular File Input
 
 Simple angular js directive to handle the File Reader API.
 
-Usage
--------------------------
+## Usage
+
 Check the demo folder (demo/index.html) for examples.
 
-Installation
--------------------------
+## Installation
+
 ```
 bower install angular-file-input
 ```
 
-Module dependency
--------------------------
-```
+## Module dependency
+
+```js
 angular
 .module('app', ['angularFileInput'])
 ```
 
 Files to be used in production are located in the folder "angular-file-input/dist"
 
-Including the required files (js and css)
--------------------------
-```
+## Including the required files (js and css)
+
+```html
 <script src="angular-file-input.min.js"></script> 
 ```
 
-Docs
--------------------------
+## Docs
+
 The directive supports two parameters:
 
 - mode: the file reader mode to be used;
@@ -44,8 +43,8 @@ Available mode options:
 
 If you do not provide a mode, it will assume "data-url" as default.
 
-The File object response
--------------------------
+## The File object response
+
 The file object used in the callback function will have the following properties:
 
 - name
@@ -56,11 +55,25 @@ The file object used in the callback function will have the following properties
 
 Samples
 -------------------------
-```
+
+```html
 <ng-file-input mode="data-url" callback="callback(file)"></ng-file-input>
 <ng-file-input mode="array-buffer" callback="callback(file)"></ng-file-input>
 <ng-file-input mode="binary-string" callback="callback(file)"></ng-file-input>
 <ng-file-input mode="text" callback="callback(file)"></ng-file-input>
+```
+
+Custom buttom view
+-----------------------
+You can specify a tmeplate file to be used as the button view, its firts element/node should be a button or a link.
+
+```html
+<!-- button.html  -->
+<button>Custom Upload Button</button>
+```
+
+```html
+<ng-file-input mode="data-url" callback="callback(file)" tmpl="'button.html'"></ng-file-input>
 ```
 
 License
