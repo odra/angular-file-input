@@ -9,7 +9,7 @@ Check the demo folder (demo/index.html) for examples.
 ## Installation
 
 ```
-bower install angular-file-input
+bower install simple-angular-file-input
 ```
 
 ## Module dependency
