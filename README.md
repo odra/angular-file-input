@@ -65,7 +65,7 @@ Samples
 
 Custom buttom view
 -----------------------
-You can specify a tmeplate file to be used as the button view, its firts element/node should be a button or a link.
+You can specify a template file to be used as the button view, its firts element/node should be a button or a link.
 
 ```html
 <!-- button.html  -->
