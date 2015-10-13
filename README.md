@@ -29,10 +29,11 @@ Files to be used in production are located in the folder "angular-file-input/dis
 
 ## Docs
 
-The directive supports two parameters:
+The directive supports three parameters:
 
 - mode: the file reader mode to be used;
 - callback: a callback function with the file object
+- ng-model: bind the file object to a ng-model (see demo/ngmodel.html)
 
 Available mode options:
 
@@ -58,6 +59,7 @@ Samples
 
 ```html
 <ng-file-input mode="data-url" callback="callback(file)"></ng-file-input>
+<ng-file-input mode="data-url" ng-model="file"></ng-file-input>
 <ng-file-input mode="array-buffer" callback="callback(file)"></ng-file-input>
 <ng-file-input mode="binary-string" callback="callback(file)"></ng-file-input>
 <ng-file-input mode="text" callback="callback(file)"></ng-file-input>

@@ -2,20 +2,18 @@
 <html>
 	<head>
 		<script src="../bower_components/angularjs/angular.js"></script>
-		<script src="../dist/angular-file-input.js"></script>
+		<script src="../dist/angular-file-input.min.js"></script>
 		<script>
 			angular
 			.module('app', ['angularFileInput'])
 			.controller('DemoCtrl', ['$scope', function ($scope) {
-				$scope.callback = function (file) {
-					$scope.file = file;
-				}
+				
 			}]);
 		</script>
 	</head>
 	<body ng-app="app">
 		<div ng-controller="DemoCtrl">
-			<ng-file-input mode="data-url" callback="callback(file)" tmpl="'button.html'"></ng-file-input>
+			<ng-file-input mode="data-url" ng-model="file"></ng-file-input>
 			<p>{{file | json}}</p>
 		</div>
 	</body>
